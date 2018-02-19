@@ -26,7 +26,7 @@ class RegistrationTableViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        registrationViewModel = RegistrationViewModel()
     }
     
     @IBAction func save() {
