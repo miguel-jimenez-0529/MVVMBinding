@@ -13,24 +13,31 @@ class RegistrationTableViewController : UITableViewController {
     
     @IBOutlet weak var emailTextField :BindingTextField! {
         didSet {
-            emailTextField.bind { self.registrationViewModel.email = $0 }
+            emailTextField.bind { self.registrationViewModel.email = Dynamic<String>($0)}
         }
     }
     @IBOutlet weak var passwordTextField :BindingTextField! {
         didSet {
-            passwordTextField.bind { self.registrationViewModel.password = $0 }
+            passwordTextField.bind { self.registrationViewModel.password = Dynamic<String>($0) }
         }
     }
     
     private var registrationViewModel : RegistrationViewModel!
+    var selectedUser : UserViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        registrationViewModel = RegistrationViewModel()
+        registrationViewModel = RegistrationViewModel.init(userVM: selectedUser)
+        self.registrationViewModel.email.bind {self.emailTextField.text = $0 }
+        self.registrationViewModel.password.bind { self.passwordTextField.text = $0 }
     }
     
     @IBAction func save() {
-        print(registrationViewModel)
+        if registrationViewModel.isValid {
+            //Save
+        }
+        else {
+            print(registrationViewModel.brokenRules)
+        }
     }
-    
 }
