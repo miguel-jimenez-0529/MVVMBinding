@@ -20,6 +20,8 @@
 		8D99F4FD1FD5DC2E007A59B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D99F4FC1FD5DC2E007A59B7 /* Assets.xcassets */; };
 		8D99F5001FD5DC2E007A59B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D99F4FE1FD5DC2E007A59B7 /* LaunchScreen.storyboard */; };
 		8D99F50A1FD5E70B007A59B7 /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99F5091FD5E70B007A59B7 /* RegistrationTableViewController.swift */; };
+		AD016D0320406EE9000B005B /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD016D0220406EE9000B005B /* Dynamic.swift */; };
+		AD016D052040716C000B005B /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD016D042040716C000B005B /* VC2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		8D99F4FF1FD5DC2E007A59B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D99F5011FD5DC2E007A59B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D99F5091FD5E70B007A59B7 /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+		AD016D0220406EE9000B005B /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		AD016D042040716C000B005B /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +83,13 @@
 				498C11F9203C9C7D00AE961A /* DataAccess.swift */,
 				8D99F5091FD5E70B007A59B7 /* RegistrationTableViewController.swift */,
 				49636971203B8E230069CE22 /* RegistrationViewModel.swift */,
-				49636973203B8EA60069CE22 /* BindingTextField.swift */,
 				498C11FB203C9CAC00AE961A /* UsersTableViewController.swift */,
 				498C11FD203C9CBD00AE961A /* UsersListViewModel.swift */,
 				49636975203B939D0069CE22 /* UserViewModel.swift */,
 				49636977203B94C80069CE22 /* User.swift */,
+				49636973203B8EA60069CE22 /* BindingTextField.swift */,
+				AD016D0220406EE9000B005B /* Dynamic.swift */,
+				AD016D042040716C000B005B /* VC2.swift */,
 			);
 			path = MVVMBinding;
 			sourceTree = "<group>";
@@ -163,10 +169,12 @@
 				8D99F4F81FD5DC2E007A59B7 /* ViewController.swift in Sources */,
 				49636976203B939D0069CE22 /* UserViewModel.swift in Sources */,
 				498C11FC203C9CAC00AE961A /* UsersTableViewController.swift in Sources */,
+				AD016D052040716C000B005B /* VC2.swift in Sources */,
 				498C11FE203C9CBD00AE961A /* UsersListViewModel.swift in Sources */,
 				49636972203B8E230069CE22 /* RegistrationViewModel.swift in Sources */,
 				49636974203B8EA60069CE22 /* BindingTextField.swift in Sources */,
 				8D99F50A1FD5E70B007A59B7 /* RegistrationTableViewController.swift in Sources */,
+				AD016D0320406EE9000B005B /* Dynamic.swift in Sources */,
 				8D99F4F61FD5DC2E007A59B7 /* AppDelegate.swift in Sources */,
 				49636978203B94C80069CE22 /* User.swift in Sources */,
 				498C11FA203C9C7D00AE961A /* DataAccess.swift in Sources */,

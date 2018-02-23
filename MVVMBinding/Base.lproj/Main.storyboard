@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -71,6 +72,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Registration" id="vIE-10-g8u">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="4v5-H1-iWh">
+                            <connections>
+                                <segue destination="fk9-y9-Oqv" kind="presentation" id="04c-og-8EQ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Kjv-oK-gT7">
                             <connections>
                                 <action selector="save" destination="XeG-Yd-iD7" id="6bf-ge-daz"/>
@@ -85,6 +91,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pW2-Bz-a2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="735.20000000000005" y="128.18590704647679"/>
+        </scene>
+        <!--VC2-->
+        <scene sceneID="KaO-6Y-ZDj">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="fk9-y9-Oqv" customClass="VC2" customModule="MVVMBinding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3CJ-st-FFF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="gSD-eZ-pCw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQP-El-SCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1585" y="128"/>
         </scene>
         <!--Users-->
         <scene sceneID="nYS-GR-bRq">
@@ -156,6 +178,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="k09-hw-rav"/>
+        <segue reference="yib-u8-zc9"/>
     </inferredMetricsTieBreakers>
 </document>
